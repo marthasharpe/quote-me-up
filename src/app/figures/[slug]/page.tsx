@@ -3,6 +3,7 @@ import { QuoteWithFigure } from "@/types";
 import { QuoteCard } from "@/components/QuoteCard";
 import { getInitials } from "@/lib/initials";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import { Button } from "@/components/ui/button";
 
 interface ProfilePageProps {
   params: Promise<{
@@ -141,13 +142,14 @@ export default async function ProfilePage({ params }: ProfilePageProps) {
               )}
 
               {/* Quote count */}
-              <div className="mt-6 pt-6 border-t border-border">
+              <div className="flex items-center justify-between mt-6 pt-6 border-t border-border">
                 <p className="text-sm text-muted-foreground">
                   <span className="font-semibold text-foreground">
                     {quotes.length}
                   </span>{" "}
-                  quote{quotes.length !== 1 ? "s" : ""} collected
+                  quote{quotes.length !== 1 ? "s" : ""} posted
                 </p>
+                <Button size="sm">Follow</Button>
               </div>
             </div>
           </div>

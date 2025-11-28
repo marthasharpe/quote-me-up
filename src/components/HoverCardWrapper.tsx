@@ -70,7 +70,7 @@ export function HoverCardWrapper({
 
       {isOpen && (
         <Card
-          className={`absolute top-full left-0 z-50 ${contentClassName}`}
+          className={`absolute top-full -left-5 z-50 ${contentClassName}`}
           onClick={(e) => e.stopPropagation()}
         >
           <CardContent>{content}</CardContent>

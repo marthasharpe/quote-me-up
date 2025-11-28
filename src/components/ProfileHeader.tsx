@@ -25,7 +25,7 @@ export function ProfileHeader({ figure }: ProfileHeaderProps) {
       </Avatar>
       <div className="grow">
         <div className="font-semibold text-primary hover:text-accent transition-colors">
-          {figure.slug}
+          {figure.display_name}
         </div>
         {figure.short_label && (
           <p className="text-sm text-muted-foreground">{figure.short_label}</p>

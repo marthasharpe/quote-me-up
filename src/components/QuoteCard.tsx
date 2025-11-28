@@ -38,7 +38,7 @@ export function QuoteCard({ quote }: QuoteCardProps) {
       </CardContent>
 
       {/* Footer */}
-      <CardFooter className="flex items-center justify-between border-t border-border">
+      <CardFooter className="flex items-center justify-between">
         {/* Left side - Copyright notice */}
         {!quote.is_public_domain && (
           <span className="text-xs text-muted-foreground rounded bg-muted px-2 py-1">

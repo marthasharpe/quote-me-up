@@ -47,7 +47,7 @@ export function SourceHoverCard({
           )}
         </div>
       }
-      contentClassName="w-64"
+      contentClassName="w-40"
     />
   );
 }
